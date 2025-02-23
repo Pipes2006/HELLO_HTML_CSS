@@ -1,0 +1,9 @@
+p {
+    color: yellow; /* color del texto */
+    font-family: sans-serif; /* tipo de letra */
+    font-size: 20px; /* tamaño de la letra */
+    font-weight: bold; /* grosor de la letra  , (bold) es negrita , (bolder) es mas grueso aun el tamaño de la letra*/
+    text-align: center; /* alineación del texto */
+    font-style: italic; /* estilo de la letra*/
+    text-align:center; /* alineación del texto */
+}
