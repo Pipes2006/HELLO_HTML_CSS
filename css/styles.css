@@ -1,11 +1,174 @@
-h1 {  
-    color: rgb(0, 0, 0);  
-    font-size: 24px;  
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background: rgba(0 , 128 , 0 , 40%);
-    border-style:outset ;
-    border-width:medium;
-    border-color:rgb(117, 70, 172) blue green yellow ;
+:root {
+    color-scheme: light;
+    color: #102a43;
+    background-color: #f8fafc;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
 }
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background: #f8fafc;
+    color: #102a43;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #3b5bdb 0%, #5c7cfa 100%);
+}
+
+.section-label {
+    display: inline-block;
+    font-size: 0.85rem;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: #3b5bdb;
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    font-size: clamp(2rem, 2.2vw, 2.75rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.section-bg {
+    background: #ffffff;
+    border-radius: 1rem;
+}
+
+.card {
+    border-radius: 1rem;
+}
+
+.card-body ul {
+    padding-left: 1.1rem;
+}
+
+.card-body ul li {
+    margin-bottom: 0.55rem;
+}
+
+.timeline > div {
+    position: relative;
+    padding-left: 1.25rem;
+    margin-left: 0.5rem;
+    border-left: 2px solid #e2e8f0;
+}
+
+.timeline > div::before {
+    content: '';
+    position: absolute;
+    left: -7px;
+    top: 0.5rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #3b5bdb;
+}
+
+footer {
+    background: #0b1220;
+}
+
+footer p,
+footer small {
+    color: #cbd5e1;
+}
+
+.letter-spacing {
+    letter-spacing: 0.16em;
+}
+
+.service-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+}
+
+.service-card img {
+    max-height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.ratio img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-card .card-body {
+    min-height: 240px;
+}
+
+.border-dashed {
+    border: 2px dashed #cbd5e1;
+}
+
+.contact-header {
+    background: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
+}
+
+.contact-quick {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 1.25rem;
+}
+
+.contact-icon {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.2rem;
+}
+
+.contact-info-card,
+.contact-form-card {
+    border-radius: 1.25rem;
+    background: #ffffff;
+}
+
+.contact-list li {
+    padding: 1rem 0;
+    border-bottom: 1px solid #eff6ff;
+}
+
+.contact-list li:last-child {
+    border-bottom: none;
+}
+
+.contact-form-card .form-control {
+    border-radius: 1rem;
+}
+
+.contact-form-card .btn-primary {
+    min-width: 180px;
+}
+
+.disabled-link {
+    color: #adb5bd;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.development-card {
+    background: #f8fafc;
+}
+
+.development-card .badge {
+    font-size: 0.85rem;
+}
+
+@media (max-width: 767px) {
+    .hero-section {
+        text-align: center;
+    }
+
+    .contact-quick {
+        text-align: left;
+    }
+}
+
